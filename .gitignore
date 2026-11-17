@@ -1,0 +1,23 @@
+# 本机环境、缓存、打包文件
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.vscode/
+.idea/
+.env
+.env.*
+*.zip
+运行截图.png
+
+# 训练集提交无损压缩版；完整旧验证数据与题目验证文件重复
+data_ds15/train.pkl
+data_ds15/val.pkl
+
+# 大型结果可由train.py重新生成，只跟踪下方列出的摘要
+results/*
+!results/metrics.csv
+!results/tuning.csv
+!results/comparison.png
+results_v1/
+results_v2/
